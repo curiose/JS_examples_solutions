@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <form class="form">
+      <!-- сюда отправляется почта -->
+      <input type="hidden" name="admin_email[]" value="attain06@gmail.com"> 
+      <!-- тема письма -->
+      <input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+      <!-- data-validate нужен для плагина -->
+      <input type="text" name="fio" data-validate-field="fio">
+      <input type="email" name="email" data-validate-field="email">
+      <input type="tel" name="tel" data-validate-field="tel">
+      <button type="submit"> Отправить</button>
+   </form>
+   <script src="/validation_and_mask/just-validate.min.js"></script>
+   <script src="/validation_and_mask/inputmask.min.js"></script>
+   <script src="/validation_and_mask/common.js"></script>
+</body>
+</html>
