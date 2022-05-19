@@ -1,0 +1,30 @@
+
+/* стилизация пагинации */
+.swiper-pagination-bullet {
+   background-color: red;
+   width: 10px;
+   height: 10px;
+   margin: 0 10px;
+   opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+   background-color: navy;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+   position: static;
+   margin-left: 15px;
+}
+
+/* через padding потому что у контейнера overflow: hidden */
+.swiper-container {
+   padding-bottom: 50px;
+}
+
+/* почему то не срабатывает Overflow: hidden */
+.swiper-container1 {
+   padding-bottom: 50px;
+   overflow: hidden;
+}

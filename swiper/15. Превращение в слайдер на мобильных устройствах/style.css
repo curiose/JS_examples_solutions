@@ -1,0 +1,55 @@
+
+/* стилизация пагинации */
+.swiper-pagination-bullet {
+   background-color: red;
+   width: 10px;
+   height: 10px;
+   margin: 0 10px;
+   opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+   background-color: navy;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+   position: static;
+   margin-left: 15px;
+}
+
+/* через padding потому что у контейнера overflow: hidden */
+.swiper-container {
+   padding-bottom: 50px;
+}
+
+.slider-container {
+   overflow: hidden;
+   width: 100%;
+}
+
+.swiper-wrapper {
+   flex-wrap: wrap;
+}
+
+.card {
+   width: 22.5%;
+   flex-shrink: 0;
+   margin-right: 2.5%;
+   margin-bottom: 2.5%;
+}
+
+.card:nth-child(4n) {
+   margin-right: 0;
+}
+
+@media (max-width: 600px) {
+   .card {
+      width: 100%;
+      margin: 0;
+   }
+
+   .swiper-wrapper {
+      flex-wrap: nowrap;
+   }
+}

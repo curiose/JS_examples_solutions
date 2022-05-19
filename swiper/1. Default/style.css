@@ -1,0 +1,19 @@
+/* если нужно поменять ширину слайдов, то нужно менять ширину основного контейнера, а не самих слайдов! */
+
+.swiper-container {
+   margin: 0 auto;
+   width: 90%;
+}
+
+/* стилизация пагинации */
+.swiper-pagination-bullet {
+   background-color: red;
+   width: 10px;
+   height: 10px;
+   margin: 0 10px;
+   opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+   background-color: navy;
+}
